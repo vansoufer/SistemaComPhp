@@ -1,0 +1,71 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Controle e Manutenção de Equipamentos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <style type="text/css">
+        * { margin: 0; padding: 0; font-family:Arial; font-size:12pt;}
+        #divCenter { 
+                background-color: rgba(123, 123, 123, 0.7); 
+                width: 500px; 
+                height: 250px; 
+                left: 45%; 
+                margin: -130px 0 0 -210px; 
+                padding:10px;
+                position: absolute; 
+                top: 50%; }
+				
+    </style>
+	<style type="text/css"> 
+		body { 
+		background-repeat: no-repeat; 
+		background-image: fundo.jpg; 
+		background-size:100%;
+		
+		
+		} 
+</style> 
+</head>
+<body background="imagens/imagem01.jpg">
+
+<div id="divCenter">
+<form name= "frm" method="post" action="userauthentication.php" align="center" border="0">
+<table border="0" width="80%" cellpadding="0" cellspacing="0" align="center">
+		
+          <font color="black"><b>Sistema de Controle e Manutenção de Equipamentos<br>Login</b></font>
+		 <br><br> <img src="imagens/user.png" name="user_img" width="50" height="50" border="0" align="middle">
+          <br><br>
+		  <tr>
+            <td width="5%" align="right"><label for="login"><b>Login</b></label></td>
+			<td width="5%" align="right"><input id="login" name="login" required="required" type="text" placeholder="nome"/></td>
+          </tr>
+		<tr>
+            <td width="5%" align="right"><label for="login"><b>Perfil</b></label></td>
+			 <td td width="5%" align="right"> <select name="perfil" id="perfil">
+                    <option value="">--</option>
+                    <option value="administrador">Administrador</option>
+					<option value="tecnico">Técnico</option>
+					<option value="usuario">Usuário</option>
+                </select></td>
+          </tr>
+          <tr> 
+            <td width="5%" align="right"><label for="senha"><b>Senha</b></label></td>
+            <td width="5%" align="right"><input id="senha" name="senha" required="required" type="password" placeholder="ex. 123" /> </td>
+          </tr>
+           
+          <tr> 
+			<td width="5%"></td>
+            <td width="5%" align="right"><input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                <label for="manterlogado"><b>Manter-me logado</b></label></td>
+          </tr>
+           
+          <tr> 
+			<td width="5%"></td>
+            <td width="5%" align="center"><input type="submit" value="Logar" /> </td>
+          </tr>
+          </p>
+        </form>
+      </div>
+	 
+	  </body>
+	  </html>
